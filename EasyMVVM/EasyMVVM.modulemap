@@ -1,0 +1,6 @@
+framework module EasyMVVM {
+  umbrella header "EasyMVVM.h"
+
+  export *
+  module * { export * }
+}
