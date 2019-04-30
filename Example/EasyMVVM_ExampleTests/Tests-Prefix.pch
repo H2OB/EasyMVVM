@@ -1,0 +1,14 @@
+//  The contents of this file are implicitly included at the beginning of every test case source file.
+
+#ifdef __OBJC__
+
+#import "EasyMVVM_ExampleTests-Swift.h"
+#import "CustomMatchers.h"
+#import "ERTestModel.h"
+#import "ERPerson.h"
+#import <EasyReact/EasyReact.h>
+#import <EasyMVVM/EasyMVVM.h>
+#import <EasyAction/EasyAction.h>
+#import <OCMock/OCMock.h>
+
+#endif

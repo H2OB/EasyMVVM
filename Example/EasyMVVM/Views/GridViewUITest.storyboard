@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sin-Iq-Lkq">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="XXC-am-HsD">
+            <objects>
+                <navigationController id="3Zk-bc-Ja8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UYx-MZ-hUC">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="sin-Iq-Lkq" kind="relationship" relationship="rootViewController" id="Gq4-tL-HOF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LFI-wi-rYy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-473" y="265"/>
+        </scene>
+        <!--GridView UITest-->
+        <scene sceneID="QwF-3G-XSq">
+            <objects>
+                <viewController id="sin-Iq-Lkq" customClass="GridViewUITestViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xd0-tr-7bz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ngu-zz-0yF">
+                                <rect key="frame" x="4" y="477" width="367" height="170"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7jq-5f-qPn">
+                                        <rect key="frame" x="0.0" y="0.0" width="367" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfP-Y3-KOJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="57.5" height="30"/>
+                                                <state key="normal" title="Reset"/>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UaQ-cn-lYv">
+                                                <rect key="frame" x="77.5" y="0.0" width="57.5" height="30"/>
+                                                <state key="normal" title="Add"/>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEj-6V-ekV">
+                                                <rect key="frame" x="155" y="0.0" width="57" height="30"/>
+                                                <state key="normal" title="Delete"/>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2d-CI-YRX">
+                                                <rect key="frame" x="232" y="0.0" width="57.5" height="30"/>
+                                                <state key="normal" title="Move"/>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFk-nn-y8e">
+                                                <rect key="frame" x="309.5" y="0.0" width="57.5" height="30"/>
+                                                <state key="normal" title="Update"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LJj-xG-Bde">
+                                        <rect key="frame" x="0.0" y="35" width="367" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzB-xw-hLR">
+                                                <rect key="frame" x="0.0" y="0.0" width="109" height="30"/>
+                                                <state key="normal" title="Add Header"/>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZw-1H-CPn">
+                                                <rect key="frame" x="129" y="0.0" width="109" height="30"/>
+                                                <state key="normal" title="Remove Header"/>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYJ-nS-N6M">
+                                                <rect key="frame" x="258" y="0.0" width="109" height="30"/>
+                                                <state key="normal" title="Change Header"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2ya-k4-nSE">
+                                        <rect key="frame" x="0.0" y="70" width="367" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bR-zS-b3y">
+                                                <rect key="frame" x="0.0" y="0.0" width="109" height="30"/>
+                                                <state key="normal" title="Add Footer"/>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7x-FD-NGg">
+                                                <rect key="frame" x="129" y="0.0" width="109" height="30"/>
+                                                <state key="normal" title="Remove Footer"/>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAz-sX-Gaq">
+                                                <rect key="frame" x="258" y="0.0" width="109" height="30"/>
+                                                <state key="normal" title="Change Footer"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gba-97-5CO">
+                                        <rect key="frame" x="0.0" y="105" width="367" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u96-g8-44W">
+                                                <rect key="frame" x="0.0" y="0.0" width="173.5" height="30"/>
+                                                <state key="normal" title="increase column count"/>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfo-Zh-pgH">
+                                                <rect key="frame" x="193.5" y="0.0" width="173.5" height="30"/>
+                                                <state key="normal" title="decrease column count"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kSJ-4V-xqx">
+                                        <rect key="frame" x="0.0" y="140" width="367" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMs-OI-p9S">
+                                                <rect key="frame" x="0.0" y="0.0" width="173.5" height="30"/>
+                                                <state key="normal" title="increase item height"/>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7y-Ye-UrE">
+                                                <rect key="frame" x="193.5" y="0.0" width="173.5" height="30"/>
+                                                <state key="normal" title="decrease item height"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="AhE-QC-eEi"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" id="yid-Ab-EMO"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ngu-zz-0yF" firstAttribute="centerX" secondItem="Xd0-tr-7bz" secondAttribute="centerX" id="KPp-Z7-vDX"/>
+                            <constraint firstItem="Ngu-zz-0yF" firstAttribute="bottom" secondItem="Xd0-tr-7bz" secondAttribute="bottom" constant="-20" id="rLl-9A-aPh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1BX-IH-0jz"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="GridView UITest" id="4a0-U9-Ggt"/>
+                    <connections>
+                        <outlet property="addButton" destination="UaQ-cn-lYv" id="N6B-xL-Yhs"/>
+                        <outlet property="addFooterButton" destination="2bR-zS-b3y" id="m6g-Xh-6rI"/>
+                        <outlet property="addHeaderButton" destination="wzB-xw-hLR" id="M0t-he-HKF"/>
+                        <outlet property="changeFooterButton" destination="qAz-sX-Gaq" id="Lg4-Tl-Pb3"/>
+                        <outlet property="changeHeaderButton" destination="WYJ-nS-N6M" id="mYE-Ux-8Yl"/>
+                        <outlet property="decreaseColumnButton" destination="Yfo-Zh-pgH" id="Dch-bB-dz8"/>
+                        <outlet property="decreaseItemHeightButton" destination="d7y-Ye-UrE" id="9Eg-nF-gDf"/>
+                        <outlet property="deleteButton" destination="sEj-6V-ekV" id="uFd-aW-aug"/>
+                        <outlet property="increaseColumnButton" destination="u96-g8-44W" id="LV9-9o-0gn"/>
+                        <outlet property="increaseItemHeightButton" destination="sMs-OI-p9S" id="3KE-2Y-cCo"/>
+                        <outlet property="moveButton" destination="R2d-CI-YRX" id="gdn-nd-Ih2"/>
+                        <outlet property="removeFooterButton" destination="o7x-FD-NGg" id="cVj-9d-y0a"/>
+                        <outlet property="removeHeaderButton" destination="GZw-1H-CPn" id="FQA-6w-3xK"/>
+                        <outlet property="resetButton" destination="sfP-Y3-KOJ" id="wlz-6Y-uzK"/>
+                        <outlet property="updateButton" destination="PFk-nn-y8e" id="TGi-22-fo6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kXb-rC-82u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="238" y="265"/>
+        </scene>
+    </scenes>
+</document>

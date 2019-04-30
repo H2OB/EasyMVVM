@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ptq-qm-qRT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ya3-df-1ue">
+            <objects>
+                <navigationController id="Rdh-cZ-VvN" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tmA-dY-y0x">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ptq-qm-qRT" kind="relationship" relationship="rootViewController" id="XVH-DO-7pB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EgS-h5-AKR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1175" y="151"/>
+        </scene>
+        <!--ListView UITest-->
+        <scene sceneID="xIf-Vp-dmv">
+            <objects>
+                <viewController id="ptq-qm-qRT" customClass="ListViewUITestViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xNd-0k-qXl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cxM-hV-tPC">
+                                <rect key="frame" x="4" y="547" width="367" height="100"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="rkn-PH-VpE">
+                                        <rect key="frame" x="0.0" y="0.0" width="367" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsg-gQ-jU7">
+                                                <rect key="frame" x="0.0" y="0.0" width="57.5" height="30"/>
+                                                <state key="normal" title="Reset"/>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27T-6T-Uni">
+                                                <rect key="frame" x="77.5" y="0.0" width="57.5" height="30"/>
+                                                <state key="normal" title="Add"/>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THC-dr-0JN">
+                                                <rect key="frame" x="155" y="0.0" width="57" height="30"/>
+                                                <state key="normal" title="Delete"/>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Hg-do-ehB">
+                                                <rect key="frame" x="232" y="0.0" width="57.5" height="30"/>
+                                                <state key="normal" title="Move"/>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9kA-Vo-tOV">
+                                                <rect key="frame" x="309.5" y="0.0" width="57.5" height="30"/>
+                                                <state key="normal" title="Update"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eXQ-an-bmT">
+                                        <rect key="frame" x="0.0" y="35" width="367" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mP1-YE-gu1">
+                                                <rect key="frame" x="0.0" y="0.0" width="109" height="30"/>
+                                                <state key="normal" title="Add Header"/>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3b-Ok-Qpb">
+                                                <rect key="frame" x="129" y="0.0" width="109" height="30"/>
+                                                <state key="normal" title="Remove Header"/>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gg8-dE-BhL">
+                                                <rect key="frame" x="258" y="0.0" width="109" height="30"/>
+                                                <state key="normal" title="Change Header"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pBk-Zu-cl2">
+                                        <rect key="frame" x="0.0" y="70" width="367" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fd4-Uj-qWZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="109" height="30"/>
+                                                <state key="normal" title="Add Footer"/>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Vb-9B-gLS">
+                                                <rect key="frame" x="129" y="0.0" width="109" height="30"/>
+                                                <state key="normal" title="Remove Footer"/>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwO-oN-4OL">
+                                                <rect key="frame" x="258" y="0.0" width="109" height="30"/>
+                                                <state key="normal" title="Change Footer"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="8Ir-DI-jVc"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" id="dPn-l3-r1j"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cxM-hV-tPC" firstAttribute="centerX" secondItem="xNd-0k-qXl" secondAttribute="centerX" id="Q5c-4J-nd9"/>
+                            <constraint firstItem="cxM-hV-tPC" firstAttribute="bottom" secondItem="xNd-0k-qXl" secondAttribute="bottom" constant="-20" id="ZQ9-79-356"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xNX-8W-BYw"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ListView UITest" id="nMh-aT-dJ6"/>
+                    <connections>
+                        <outlet property="addButton" destination="27T-6T-Uni" id="Zuo-8F-IUe"/>
+                        <outlet property="addFooterButton" destination="fd4-Uj-qWZ" id="LEV-zv-XSv"/>
+                        <outlet property="addHeaderButton" destination="mP1-YE-gu1" id="Uq3-wL-5H7"/>
+                        <outlet property="changeFooterButton" destination="gwO-oN-4OL" id="iQN-0F-Bmu"/>
+                        <outlet property="changeHeaderButton" destination="Gg8-dE-BhL" id="zPH-eo-vU1"/>
+                        <outlet property="deleteButton" destination="THC-dr-0JN" id="JLO-9U-pAb"/>
+                        <outlet property="moveButton" destination="1Hg-do-ehB" id="aGs-vU-d0S"/>
+                        <outlet property="removeFooterButton" destination="9Vb-9B-gLS" id="3NV-gg-Tv0"/>
+                        <outlet property="removeHeaderButton" destination="L3b-Ok-Qpb" id="L6F-kB-67n"/>
+                        <outlet property="resetButton" destination="dsg-gQ-jU7" id="N7i-sS-RRg"/>
+                        <outlet property="updateButton" destination="9kA-Vo-tOV" id="RgF-vn-Fk3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BYo-l7-I0L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-490.39999999999998" y="150.67466266866569"/>
+        </scene>
+    </scenes>
+</document>
